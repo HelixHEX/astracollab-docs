@@ -20,27 +20,28 @@
                         ]
                     },
                     {
-                        "group": "Customization",
+                        "group": "SDK & Packages",
                         "pages": [
-                            "essentials/settings",
-                            "essentials/navigation"
+                            "sdk/nextjs",
+                            "sdk/javascript",
+                            "sdk/examples"
                         ]
                     },
                     {
-                        "group": "Writing content",
+                        "group": "Features",
                         "pages": [
-                            "essentials/markdown",
-                            "essentials/code",
-                            "essentials/images",
-                            "essentials/reusable-snippets"
+                            "features/file-upload",
+                            "features/storage-management",
+                            "features/billing",
+                            "features/api-keys"
                         ]
                     },
                     {
-                        "group": "AI tools",
+                        "group": "Integration",
                         "pages": [
-                            "ai-tools/cursor",
-                            "ai-tools/claude-code",
-                            "ai-tools/windsurf"
+                            "integration/authentication",
+                            "integration/webhooks",
+                            "integration/rate-limiting"
                         ]
                     }
                 ]
@@ -48,18 +49,43 @@
             {
                 "tab": "API reference",
                 "groups": [{
-                        "group": "API documentation",
+                        "group": "Overview",
                         "pages": [
-                            "api-reference/introduction"
+                            "api-reference/introduction",
+                            "api-reference/authentication"
                         ]
                     },
                     {
-                        "group": "Endpoint examples",
+                        "group": "Files",
                         "pages": [
-                            "api-reference/endpoint/get",
-                            "api-reference/endpoint/create",
-                            "api-reference/endpoint/delete",
-                            "api-reference/endpoint/webhook"
+                            "api-reference/files/list",
+                            "api-reference/files/upload",
+                            "api-reference/files/download",
+                            "api-reference/files/multipart",
+                            "api-reference/files/delete"
+                        ]
+                    },
+                    {
+                        "group": "Folders",
+                        "pages": [
+                            "api-reference/folders/create",
+                            "api-reference/folders/list",
+                            "api-reference/folders/delete"
+                        ]
+                    },
+                    {
+                        "group": "API Keys",
+                        "pages": [
+                            "api-reference/keys/create",
+                            "api-reference/keys/list",
+                            "api-reference/keys/revoke"
+                        ]
+                    },
+                    {
+                        "group": "Billing",
+                        "pages": [
+                            "api-reference/billing/overview",
+                            "api-reference/billing/usage"
                         ]
                     }
                 ]
@@ -67,19 +93,19 @@
         ],
         "global": {
             "anchors": [{
-                    "anchor": "Documentation",
-                    "href": "https://mintlify.com/docs",
-                    "icon": "book-open-cover"
+                    "anchor": "GitHub",
+                    "href": "https://github.com/astracollab/astracollab",
+                    "icon": "github"
                 },
                 {
-                    "anchor": "Community",
-                    "href": "https://mintlify.com/community",
-                    "icon": "slack"
+                    "anchor": "Discord",
+                    "href": "https://discord.gg/astracollab",
+                    "icon": "discord"
                 },
                 {
-                    "anchor": "Blog",
-                    "href": "https://mintlify.com/blog",
-                    "icon": "newspaper"
+                    "anchor": "Support",
+                    "href": "mailto:support@astracollab.com",
+                    "icon": "mail"
                 }
             ]
         }
@@ -90,13 +116,16 @@
     },
     "navbar": {
         "links": [{
-            "label": "Support",
-            "href": "mailto:hi@mintlify.com"
+            "label": "Dashboard",
+            "href": "https://app.astracollab.com"
+        }, {
+            "label": "Pricing",
+            "href": "/pricing"
         }],
         "primary": {
             "type": "button",
-            "label": "Dashboard",
-            "href": "https://dashboard.mintlify.com"
+            "label": "Get Started",
+            "href": "/quickstart"
         }
     },
     "contextual": {
@@ -113,9 +142,9 @@
     },
     "footer": {
         "socials": {
-            "x": "https://x.com/mintlify",
-            "github": "https://github.com/mintlify",
-            "linkedin": "https://linkedin.com/company/mintlify"
+            "x": "https://x.com/astracollab",
+            "github": "https://github.com/astracollab/astracollab",
+            "linkedin": "https://linkedin.com/company/astracollab"
         }
     }
 }
