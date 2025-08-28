@@ -118,14 +118,11 @@
         "links": [{
             "label": "Dashboard",
             "href": "https://app.astracollab.com"
-        }, {
-            "label": "Pricing",
-            "href": "/pricing"
         }],
         "primary": {
             "type": "button",
             "label": "Get Started",
-            "href": "/quickstart"
+            "href": "https://app.astracollab.com/signup"
         }
     },
     "contextual": {
