@@ -66,10 +66,7 @@ Changes are automatically deployed to production when pushed to the main branch.
 
 ## Resources
 
-- **Website**: [astracollab.com](https://astracollab.com)
-- **API Documentation**: [docs.astracollab.com](https://docs.astracollab.com)
-- **GitHub**: [github.com/astracollab/astracollab](https://github.com/astracollab/astracollab)
-- **Support**: support@astracollab.com
+- **Support**: elias@thenextcreatives.com
 
 ## License
 
