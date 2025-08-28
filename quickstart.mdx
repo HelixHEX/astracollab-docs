@@ -56,7 +56,7 @@ import { FileUploaderWithUI } from '@astracollab/nextjs';
 
 function MyComponent() {
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -95,7 +95,7 @@ console.log('File uploaded:', fileId);
 ### Direct API Call
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/files" \
+curl -X GET "https://api.astracollab.app/v1/files" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -105,7 +105,7 @@ Create a `.env.local` file in your project root:
 
 ```env
 ASTRACOLLAB_API_KEY=your-api-key-here
-ASTRACOLLAB_BASE_URL=https://api.astracollab.com
+ASTRACOLLAB_BASE_URL=https://api.astracollab.app
 ```
 
 ## Step 6: Test Your Integration

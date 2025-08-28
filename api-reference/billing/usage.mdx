@@ -25,7 +25,7 @@ GET /billing/usage
 ### Example Request
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/billing/usage?period=month&granularity=day" \
+curl -X GET "https://api.astracollab.app/v1/billing/usage?period=month&granularity=day" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -222,27 +222,27 @@ curl -X GET "https://api.astracollab.com/v1/billing/usage?period=month&granulari
 
 #### Day
 ```bash
-curl -X GET "https://api.astracollab.com/v1/billing/usage?period=day&granularity=hour"
+curl -X GET "https://api.astracollab.app/v1/billing/usage?period=day&granularity=hour"
 ```
 
 #### Week
 ```bash
-curl -X GET "https://api.astracollab.com/v1/billing/usage?period=week&granularity=day"
+curl -X GET "https://api.astracollab.app/v1/billing/usage?period=week&granularity=day"
 ```
 
 #### Month
 ```bash
-curl -X GET "https://api.astracollab.com/v1/billing/usage?period=month&granularity=day"
+curl -X GET "https://api.astracollab.app/v1/billing/usage?period=month&granularity=day"
 ```
 
 #### Year
 ```bash
-curl -X GET "https://api.astracollab.com/v1/billing/usage?period=year&granularity=month"
+curl -X GET "https://api.astracollab.app/v1/billing/usage?period=year&granularity=month"
 ```
 
 #### Custom Range
 ```bash
-curl -X GET "https://api.astracollab.com/v1/billing/usage?start=2024-01-01T00:00:00Z&end=2024-01-31T23:59:59Z&granularity=day"
+curl -X GET "https://api.astracollab.app/v1/billing/usage?start=2024-01-01T00:00:00Z&end=2024-01-31T23:59:59Z&granularity=day"
 ```
 
 ### Error Responses
@@ -285,7 +285,7 @@ curl -X GET "https://api.astracollab.com/v1/billing/usage?start=2024-01-01T00:00
 <CodeGroup>
 
 ```bash Curl
-curl -X GET "https://api.astracollab.com/v1/billing/usage?period=month" \
+curl -X GET "https://api.astracollab.app/v1/billing/usage?period=month" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 

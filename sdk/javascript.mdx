@@ -70,7 +70,7 @@ const client = new AstraCollabClient(config);
 
 **Parameters:**
 - `config.apiKey` (string, required): Your AstraCollab API key
-- `config.baseURL` (string, optional): API base URL (defaults to `https://api.astracollab.com`)
+- `config.baseURL` (string, optional): API base URL (defaults to `https://api.astracollab.app`)
 
 ### File Management
 
@@ -270,7 +270,7 @@ async function uploadFile(filePath) {
 
     console.log(`✅ File uploaded successfully!`);
     console.log(`📁 File ID: ${fileId}`);
-    console.log(`🔗 View at: https://app.astracollab.com/files/${fileId}`);
+    console.log(`🔗 View at: https://app.astracollab.app/files/${fileId}`);
   } catch (error) {
     console.error('❌ Upload failed:', error.message);
     process.exit(1);

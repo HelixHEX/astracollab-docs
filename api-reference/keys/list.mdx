@@ -27,7 +27,7 @@ GET /keys
 ### Example Request
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/keys?page=1&limit=20" \
+curl -X GET "https://api.astracollab.app/v1/keys?page=1&limit=20" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -93,13 +93,13 @@ Filter keys by their current status:
 
 ```bash
 # Active keys only
-curl -X GET "https://api.astracollab.com/v1/keys?status=active"
+curl -X GET "https://api.astracollab.app/v1/keys?status=active"
 
 # Expired keys
-curl -X GET "https://api.astracollab.com/v1/keys?status=expired"
+curl -X GET "https://api.astracollab.app/v1/keys?status=expired"
 
 # Revoked keys
-curl -X GET "https://api.astracollab.com/v1/keys?status=revoked"
+curl -X GET "https://api.astracollab.app/v1/keys?status=revoked"
 ```
 
 ### Search Keys
@@ -107,7 +107,7 @@ curl -X GET "https://api.astracollab.com/v1/keys?status=revoked"
 Search for keys by name:
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/keys?search=production" \
+curl -X GET "https://api.astracollab.app/v1/keys?search=production" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -117,13 +117,13 @@ Sort keys by different criteria:
 
 ```bash
 # Sort by name (alphabetical)
-curl -X GET "https://api.astracollab.com/v1/keys?sortBy=name&sortOrder=asc"
+curl -X GET "https://api.astracollab.app/v1/keys?sortBy=name&sortOrder=asc"
 
 # Sort by creation date (newest first)
-curl -X GET "https://api.astracollab.com/v1/keys?sortBy=createdAt&sortOrder=desc"
+curl -X GET "https://api.astracollab.app/v1/keys?sortBy=createdAt&sortOrder=desc"
 
 # Sort by last usage (most recently used first)
-curl -X GET "https://api.astracollab.com/v1/keys?sortBy=lastUsedAt&sortOrder=desc"
+curl -X GET "https://api.astracollab.app/v1/keys?sortBy=lastUsedAt&sortOrder=desc"
 ```
 
 ### Error Responses
@@ -164,7 +164,7 @@ curl -X GET "https://api.astracollab.com/v1/keys?sortBy=lastUsedAt&sortOrder=des
 <CodeGroup>
 
 ```bash Curl
-curl -X GET "https://api.astracollab.com/v1/keys" \
+curl -X GET "https://api.astracollab.app/v1/keys" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 

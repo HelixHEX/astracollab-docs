@@ -18,7 +18,7 @@ import { FileUploaderWithUI } from '@astracollab/nextjs';
 
 function SingleFileUpload() {
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -48,7 +48,7 @@ import { useUploadService } from '@astracollab/nextjs';
 
 function LargeFileUpload() {
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -310,7 +310,7 @@ Adjust chunk size for multipart uploads:
 ```tsx
 import { UploadService } from '@astracollab/nextjs';
 
-const uploadService = new UploadService('https://api.astracollab.com', 'api-key', {
+const uploadService = new UploadService('https://api.astracollab.app', 'api-key', {
   chunkSize: 10 * 1024 * 1024 // 10MB chunks
 });
 ```
@@ -320,7 +320,7 @@ const uploadService = new UploadService('https://api.astracollab.com', 'api-key'
 Control the number of concurrent uploads:
 
 ```tsx
-const uploadService = new UploadService('https://api.astracollab.com', 'api-key', {
+const uploadService = new UploadService('https://api.astracollab.app', 'api-key', {
   maxConcurrentUploads: 3
 });
 ```

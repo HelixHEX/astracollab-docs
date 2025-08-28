@@ -16,7 +16,7 @@ import { FileUploaderWithUI } from '@astracollab/nextjs';
 
 function BasicUpload() {
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -41,7 +41,7 @@ function CustomUpload() {
   const [uploadProgress, setUploadProgress] = useState(new Map());
   
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -84,7 +84,7 @@ function DragDropUpload() {
   const [isDragOver, setIsDragOver] = useState(false);
   
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -134,7 +134,7 @@ function FileList() {
   const [searchTerm, setSearchTerm] = useState('');
   
   const { files, isLoading, error } = useFiles(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -178,7 +178,7 @@ function FilePreview({ fileId }) {
   const [previewUrl, setPreviewUrl] = useState(null);
   
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -255,7 +255,7 @@ function FormWithUpload() {
   const { register, handleSubmit, setValue, watch } = useForm();
   
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -299,7 +299,7 @@ function UploadWithState() {
   const { addFile, updateProgress } = useFileStore();
   
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -336,7 +336,7 @@ function LargeFileUpload() {
   const [uploadStatus, setUploadStatus] = useState('idle');
   
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -434,7 +434,7 @@ function RealTimeFileSync() {
   const [lastSync, setLastSync] = useState(null);
   
   const { files, refetch } = useFiles(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -472,7 +472,7 @@ import { toast } from 'react-hot-toast';
 
 function UploadWithErrorHandling() {
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -515,7 +515,7 @@ function LazyFileList() {
   const [hasMore, setHasMore] = useState(true);
   
   const { files, isLoading } = useFiles(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY,
     undefined,
     undefined,

@@ -27,7 +27,7 @@ GET /folders
 ### Example Request
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/folders?page=1&limit=20&parentFolderId=folder_123" \
+curl -X GET "https://api.astracollab.app/v1/folders?page=1&limit=20&parentFolderId=folder_123" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -121,7 +121,7 @@ curl -X GET "https://api.astracollab.com/v1/folders?page=1&limit=20&parentFolder
 To get folders at the root level (no parent):
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/folders?parentFolderId=null" \
+curl -X GET "https://api.astracollab.app/v1/folders?parentFolderId=null" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -130,7 +130,7 @@ curl -X GET "https://api.astracollab.com/v1/folders?parentFolderId=null" \
 Search for folders by name:
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/folders?search=documents" \
+curl -X GET "https://api.astracollab.app/v1/folders?search=documents" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -140,13 +140,13 @@ Sort folders by different criteria:
 
 ```bash
 # Sort by name (alphabetical)
-curl -X GET "https://api.astracollab.com/v1/folders?sortBy=name&sortOrder=asc"
+curl -X GET "https://api.astracollab.app/v1/folders?sortBy=name&sortOrder=asc"
 
 # Sort by creation date (newest first)
-curl -X GET "https://api.astracollab.com/v1/folders?sortBy=createdAt&sortOrder=desc"
+curl -X GET "https://api.astracollab.app/v1/folders?sortBy=createdAt&sortOrder=desc"
 
 # Sort by file count (most files first)
-curl -X GET "https://api.astracollab.com/v1/folders?sortBy=fileCount&sortOrder=desc"
+curl -X GET "https://api.astracollab.app/v1/folders?sortBy=fileCount&sortOrder=desc"
 ```
 
 ### SDK Examples
@@ -154,7 +154,7 @@ curl -X GET "https://api.astracollab.com/v1/folders?sortBy=fileCount&sortOrder=d
 <CodeGroup>
 
 ```bash Curl
-curl -X GET "https://api.astracollab.com/v1/folders" \
+curl -X GET "https://api.astracollab.app/v1/folders" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 

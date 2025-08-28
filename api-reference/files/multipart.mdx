@@ -55,12 +55,12 @@ POST /files/multipart-upload-start
     "parts": [
       {
         "partNumber": 1,
-        "uploadUrl": "https://storage.astracollab.com/upload/part1?token=...",
+        "uploadUrl": "https://storage.astracollab.app/upload/part1?token=...",
         "size": 52428800
       },
       {
         "partNumber": 2,
-        "uploadUrl": "https://storage.astracollab.com/upload/part2?token=...",
+        "uploadUrl": "https://storage.astracollab.app/upload/part2?token=...",
         "size": 52428800
       }
     ],
@@ -83,7 +83,7 @@ PUT /files/multipart-upload-part
 Send the file part directly to the provided upload URL:
 
 ```bash
-curl -X PUT "https://storage.astracollab.com/upload/part1?token=..." \
+curl -X PUT "https://storage.astracollab.app/upload/part1?token=..." \
   -H "Content-Type: application/octet-stream" \
   --data-binary @part1.bin
 ```
@@ -139,7 +139,7 @@ POST /files/multipart-upload-complete
       "name": "large-video.mp4",
       "size": 1073741824,
       "type": "video/mp4",
-      "url": "https://storage.astracollab.com/files/file_1234567890abcdef",
+      "url": "https://storage.astracollab.app/files/file_1234567890abcdef",
       "folderId": "folder_123",
       "uploadedAt": "2024-01-15T10:30:00Z",
       "updatedAt": "2024-01-15T10:30:00Z",

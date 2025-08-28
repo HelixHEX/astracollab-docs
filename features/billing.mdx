@@ -10,22 +10,10 @@ AstraCollab offers transparent, predictable pricing with per-user and per-storag
 ## Pricing Plans
 
 ### Creator Plan
-- **Price**: $12/user/month
+- **Price**: $8/user/month
 - **Included Storage**: 100GB per user
-- **Additional Storage**: $0.03/GB/month
-- **Features**: Basic video tools, API access, 10,000 requests/hour
+- **Additional Storage**: $0.05/GB/month
 
-### Studio Plan
-- **Price**: $25/user/month
-- **Included Storage**: 250GB per user
-- **Additional Storage**: $0.025/GB/month
-- **Features**: Advanced editing, priority support, 50,000 requests/hour
-
-### Production Plan
-- **Price**: $45/user/month
-- **Included Storage**: 500GB per user
-- **Additional Storage**: $0.02/GB/month
-- **Features**: Full pipeline, dedicated support, 100,000 requests/hour
 
 ## Usage Tracking
 
@@ -38,7 +26,7 @@ import { useBilling } from '@astracollab/nextjs';
 
 function StorageUsage() {
   const { billing, isLoading } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -76,7 +64,7 @@ Track your API request consumption:
 ```tsx
 function APIUsage() {
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -110,7 +98,7 @@ Get detailed billing information:
 ```tsx
 function BillingInfo() {
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -139,7 +127,7 @@ View historical usage data:
 ```tsx
 function UsageHistory() {
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -182,7 +170,7 @@ Understand how storage costs are calculated:
 ```tsx
 function StorageCostBreakdown() {
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -221,7 +209,7 @@ Calculate per-user costs:
 ```tsx
 function UserCostBreakdown() {
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -261,7 +249,7 @@ Set up alerts for storage usage:
 function StorageAlerts() {
   const [alerts, setAlerts] = useState([]);
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -307,7 +295,7 @@ Monitor API usage:
 ```tsx
 function APIRateLimitAlerts() {
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -344,7 +332,7 @@ Handle plan upgrades:
 ```tsx
 function PlanUpgrade() {
   const { billing } = useBilling(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY
   );
 
@@ -510,5 +498,5 @@ Need help with billing?
 
 - **Billing API**: Check the [billing endpoints](/api-reference/billing/overview)
 - **Usage API**: Monitor usage with [usage endpoints](/api-reference/billing/usage)
-- **Support**: Email us at billing@astracollab.com
+- **Support**: Email us at billing@astracollab.app
 - **Documentation**: Review our [billing guide](/features/billing)

@@ -26,7 +26,7 @@ This endpoint accepts `multipart/form-data` with the following fields:
 ### Example Request
 
 ```bash
-curl -X POST "https://api.astracollab.com/v1/files/upload" \
+curl -X POST "https://api.astracollab.app/v1/files/upload" \
   -H "Authorization: Bearer your-api-key-here" \
   -F "file=@example.jpg" \
   -F "folderId=folder_123" \
@@ -44,7 +44,7 @@ curl -X POST "https://api.astracollab.com/v1/files/upload" \
       "name": "example.jpg",
       "size": 1024000,
       "type": "image/jpeg",
-      "url": "https://storage.astracollab.com/files/file_1234567890abcdef",
+      "url": "https://storage.astracollab.app/files/file_1234567890abcdef",
       "folderId": "folder_123",
       "uploadedAt": "2024-01-15T10:30:00Z",
       "updatedAt": "2024-01-15T10:30:00Z",
@@ -132,7 +132,7 @@ For large files, you can track upload progress:
 const formData = new FormData();
 formData.append('file', file);
 
-const response = await fetch('https://api.astracollab.com/v1/files/upload', {
+const response = await fetch('https://api.astracollab.app/v1/files/upload', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer your-api-key-here'
@@ -152,7 +152,7 @@ const response = await fetch('https://api.astracollab.com/v1/files/upload', {
 <CodeGroup>
 
 ```bash Curl
-curl -X POST "https://api.astracollab.com/v1/files/upload" \
+curl -X POST "https://api.astracollab.app/v1/files/upload" \
   -H "Authorization: Bearer your-api-key-here" \
   -F "file=@example.jpg"
 ```

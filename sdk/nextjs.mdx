@@ -26,7 +26,7 @@ import { FileUploaderWithUI } from '@astracollab/nextjs';
 
 function MyComponent() {
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -54,7 +54,7 @@ import { useUploadService, useUpload } from '@astracollab/nextjs';
 
 function CustomUploader() {
   const config = {
-    baseURL: 'https://api.astracollab.com',
+    baseURL: 'https://api.astracollab.app',
     apiKey: process.env.ASTRACOLLAB_API_KEY
   };
 
@@ -236,7 +236,7 @@ function UploadWithProgress() {
 ```tsx
 function FileList() {
   const { files, isLoading, error } = useFiles(
-    'https://api.astracollab.com',
+    'https://api.astracollab.app',
     process.env.ASTRACOLLAB_API_KEY,
     'my-folder',
     'my-org'
@@ -262,7 +262,7 @@ function FileList() {
 ```tsx
 import { UploadService } from '@astracollab/nextjs';
 
-const uploadService = new UploadService('https://api.astracollab.com', 'your-api-key');
+const uploadService = new UploadService('https://api.astracollab.app', 'your-api-key');
 
 // Upload a single file
 const fileId = await uploadService.uploadSingleFile({

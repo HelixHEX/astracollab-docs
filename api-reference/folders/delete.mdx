@@ -33,7 +33,7 @@ DELETE /folders/{folderId}
 ### Example Request
 
 ```bash
-curl -X DELETE "https://api.astracollab.com/v1/folders/folder_1234567890abcdef" \
+curl -X DELETE "https://api.astracollab.app/v1/folders/folder_1234567890abcdef" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -115,7 +115,7 @@ curl -X DELETE "https://api.astracollab.com/v1/folders/folder_1234567890abcdef" 
 To delete a folder that contains files, use the `force` parameter:
 
 ```bash
-curl -X DELETE "https://api.astracollab.com/v1/folders/folder_1234567890abcdef?force=true" \
+curl -X DELETE "https://api.astracollab.app/v1/folders/folder_1234567890abcdef?force=true" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -124,7 +124,7 @@ curl -X DELETE "https://api.astracollab.com/v1/folders/folder_1234567890abcdef?f
 To delete only the folder (not its contents), use `recursive=false`:
 
 ```bash
-curl -X DELETE "https://api.astracollab.com/v1/folders/folder_1234567890abcdef?recursive=false" \
+curl -X DELETE "https://api.astracollab.app/v1/folders/folder_1234567890abcdef?recursive=false" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -189,7 +189,7 @@ DELETE /folders/bulk
 <CodeGroup>
 
 ```bash Curl
-curl -X DELETE "https://api.astracollab.com/v1/folders/folder_1234567890abcdef" \
+curl -X DELETE "https://api.astracollab.app/v1/folders/folder_1234567890abcdef" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 

@@ -28,7 +28,7 @@ GET /files
 ### Example Request
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/files?page=1&limit=20&folderId=folder_123" \
+curl -X GET "https://api.astracollab.app/v1/files?page=1&limit=20&folderId=folder_123" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
@@ -44,7 +44,7 @@ curl -X GET "https://api.astracollab.com/v1/files?page=1&limit=20&folderId=folde
         "name": "example.jpg",
         "size": 1024000,
         "type": "image/jpeg",
-        "url": "https://storage.astracollab.com/files/file_1234567890abcdef",
+        "url": "https://storage.astracollab.app/files/file_1234567890abcdef",
         "folderId": "folder_123",
         "uploadedAt": "2024-01-15T10:30:00Z",
         "updatedAt": "2024-01-15T10:30:00Z",
@@ -118,7 +118,7 @@ This endpoint is subject to [rate limiting](/api-reference/authentication#rate-l
 <CodeGroup>
 
 ```bash Curl
-curl -X GET "https://api.astracollab.com/v1/files" \
+curl -X GET "https://api.astracollab.app/v1/files" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 

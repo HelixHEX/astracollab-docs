@@ -12,7 +12,7 @@ The AstraCollab API provides programmatic access to all storage and file managem
 All API requests should be made to:
 
 ```
-https://api.astracollab.com/v1
+https://api.astracollab.app/v1
 ```
 
 ## Authentication
@@ -157,14 +157,14 @@ Monitor usage and billing information.
 ### List Files
 
 ```bash
-curl -X GET "https://api.astracollab.com/v1/files" \
+curl -X GET "https://api.astracollab.app/v1/files" \
   -H "Authorization: Bearer your-api-key-here"
 ```
 
 ### Upload a File
 
 ```bash
-curl -X POST "https://api.astracollab.com/v1/files/upload" \
+curl -X POST "https://api.astracollab.app/v1/files/upload" \
   -H "Authorization: Bearer your-api-key-here" \
   -F "file=@example.jpg" \
   -F "folderId=optional-folder-id"
@@ -173,7 +173,7 @@ curl -X POST "https://api.astracollab.com/v1/files/upload" \
 ### Create a Folder
 
 ```bash
-curl -X POST "https://api.astracollab.com/v1/folders" \
+curl -X POST "https://api.astracollab.app/v1/folders" \
   -H "Authorization: Bearer your-api-key-here" \
   -H "Content-Type: application/json" \
   -d '{
