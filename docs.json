@@ -38,9 +38,7 @@
                     {
                         "group": "Integration",
                         "pages": [
-                            "integration/authentication",
-                            "integration/webhooks",
-                            "integration/rate-limiting"
+                            "integration/authentication"
                         ]
                     }
                 ]
