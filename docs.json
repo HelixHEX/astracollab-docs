@@ -11,7 +11,7 @@
     "navigation": {
         "tabs": [{
                 "tab": "Guides",
-                "groups": [                    {
+                "groups": [{
                         "group": "Getting started",
                         "pages": [
                             "index",
@@ -92,21 +92,10 @@
         ],
         "global": {
             "anchors": [{
-                    "anchor": "GitHub",
-                    "href": "https://github.com/astracollab/astracollab",
-                    "icon": "github"
-                },
-                {
-                    "anchor": "Discord",
-                    "href": "https://discord.gg/astracollab",
-                    "icon": "discord"
-                },
-                {
-                    "anchor": "Support",
-                    "href": "mailto:support@astracollab.com",
-                    "icon": "mail"
-                }
-            ]
+                "anchor": "Support",
+                "href": "mailto:elias@thenextcreatives.com",
+                "icon": "mail"
+            }]
         }
     },
     "logo": {
